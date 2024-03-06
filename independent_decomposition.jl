@@ -126,6 +126,7 @@ function independent_decomposition(reaction_network)
     end;
     println("The partition of reactions is:")
     display(P)
+    return(P)
 
 
     # check that all reactions have been assigned a partition
@@ -145,22 +146,5 @@ function independent_decomposition(reaction_network)
     
 end
 
-# define test reaction network
-test = @reaction_network begin
-    k1, A + B --> B + C
-    (k2,k3), B + C <--> 2B
-    (k4,k5), B <--> 2E
-    k6, 2E --> 2D
-    k7, C --> A
-    k8, D --> E
-end
 
-# run the decomposition on the test network
-independent_decomposition(test)
-
-## define your reaction network 
-## see Catalyst.jl for more details on how to define a reaction network
-# my_network = @reaction_network begin
-# end 
-# independent_decomposition(my_network)
 
