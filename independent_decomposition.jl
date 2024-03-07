@@ -152,4 +152,4 @@ Julia_extension = ".jl"
 fname = reaction_network_name*Julia_extension
 include(fname)
 # # run the decomposition on the reaction network 
-independent_decomposition() ## add reaction_network name# loading the required packages
+independent_decomposition() ## add reaction_network name
