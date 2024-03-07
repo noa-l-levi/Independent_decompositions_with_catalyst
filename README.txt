@@ -23,5 +23,5 @@ To run the independent decomposition, add the name of the reaction network where
 OUTPUT : The finest possible partition of the network reactions into independent subnetworks. 
 *Note that reactions are numbered in the order they appear in the Catalyst reaction network.
 
-
+We have included an example network - "Retina.jl", which is a reaction network for cellular cholesterol regulation in the retina. 
 
