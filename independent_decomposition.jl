@@ -1,5 +1,5 @@
 # loading the required packages
-using RowEchelon, Catalyst, Graphs, Latexify, Combinatorics, MetaGraphs, GraphPlot, DelimitedFiles
+using RowEchelon, Catalyst, Graphs, Combinatorics, MetaGraphs
 
 # independent decomposition function
 function independent_decomposition(reaction_network)
@@ -146,5 +146,10 @@ function independent_decomposition(reaction_network)
     
 end
 
-
-
+# # inlude reaction network julia file
+reaction_network_name = "" ## add reaction_network name
+Julia_extension = ".jl" 
+fname = reaction_network_name*Julia_extension
+include(fname)
+# # run the decomposition on the reaction network 
+independent_decomposition() ## add reaction_network name# loading the required packages
